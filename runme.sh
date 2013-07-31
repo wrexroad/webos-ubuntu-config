@@ -27,7 +27,7 @@ fixupstart
 apt-get upgrade -y
 apt-get dist-upgrade -y
 apt-get install -y update-manager-core
-do-release-upgrade
+do-release-upgrade -d -f DistUpgradeViewNonInteractive
 
 #install packages
 apt-get install -y lxde-core chromium-browser
