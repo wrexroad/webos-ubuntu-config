@@ -36,4 +36,6 @@ apt-get install -y lxde-core chromium-browser
 #newuser
 
 #clean up
+apt-get autoremove
+apt-get autoclean
 rm ubuntu-natty-chroot.tgz
