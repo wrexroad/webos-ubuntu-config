@@ -30,10 +30,13 @@ apt-get install -y update-manager-core
 do-release-upgrade -d -f DistUpgradeViewNonInteractive
 
 #install packages
-apt-get install -y lxde-core chromium-browser
+apt-get install -y xpdf lxde-core chromium-browser
 
 #create new user
 #newuser
+
+#set hostname
+sed -i "/ubuntu-natty-chroot/$HOSTNAME/" /etc/hosts
 
 #clean up
 apt-get autoremove
